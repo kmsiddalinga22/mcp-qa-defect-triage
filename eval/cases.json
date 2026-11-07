@@ -1,0 +1,33 @@
+[
+  {
+    "id": "critical-auth-bypass",
+    "issue": "The login endpoint does not invalidate the session token on password change, allowing previously authenticated sessions to persist indefinitely after a credential update.",
+    "expected_severity": ["Blocker", "Critical"],
+    "expected_priority": ["P0", "P1"]
+  },
+  {
+    "id": "checkout-crash-safari",
+    "issue": "Checkout button does nothing when clicked on Safari. Confirmed on Safari 17, macOS. No console errors visible. Blocks all purchases on Safari.",
+    "expected_severity": ["Blocker", "Critical"],
+    "expected_priority": ["P0", "P1"]
+  },
+  {
+    "id": "minor-typo",
+    "issue": "Search results page shows a typo: 'Reslts' instead of 'Results'. No functional impact.",
+    "expected_severity": ["Minor", "Trivial"],
+    "expected_priority": ["P3", "P4"]
+  },
+  {
+    "id": "slow-report-load",
+    "issue": "The monthly report page takes about 8 seconds to load for large accounts. It does eventually load correctly.",
+    "expected_severity": ["Major", "Minor"],
+    "expected_priority": ["P2", "P3"]
+  },
+  {
+    "id": "vague-missing-info",
+    "issue": "The app is broken.",
+    "expected_severity": null,
+    "expected_priority": null,
+    "expect_needs_info": true
+  }
+]
